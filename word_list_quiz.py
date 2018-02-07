@@ -37,10 +37,18 @@ for w in all_words:
     if w[0] == w[-1]:
         start_end_same += 1
 
-print(str(start_end_same) + "words begin and end with the same letter.")
+print(str(start_end_same) + " words begin and end with the same letter.")
 
 three_a = 0
 for w in all_words:
+    a_count = 0
     for c in w:
-        
+        if c == "a":
+            a_count +=1
+    if a_count == 3:
+        three_a += 1
 
+print("There are " + str(three_a) + " words that have exactly 3 As.")
+    
+        
+no_qu = 0
